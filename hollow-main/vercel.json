@@ -1,11 +1,13 @@
 {
+  "buildCommand": "echo 'No build needed'",
+  "outputDirectory": "hollow-man",
   "rewrites": [
     {
       "source": "/",
       "destination": "/index.html"
     },
     {
-      "source": "/:path((?!.*\\.).*)", 
+      "source": "/:path((?!.*\\.).*)",
       "destination": "/:path.html"
     },
     {
@@ -24,7 +26,7 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=2592000" } 
+        { "key": "Cache-Control", "value": "public, max-age=2592000" }
       ]
     },
     {
